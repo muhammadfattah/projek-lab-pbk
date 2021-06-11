@@ -25,7 +25,8 @@
 }
 
 .button{
-    text-align: left;
+    cursor: pointer;
+    text-align: left !important;
     font-family: 'Cooper Black';
     font-size:25pt;
     color:white;
