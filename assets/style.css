@@ -1,0 +1,25 @@
+.input-nama{
+    font-family: 'Cooper Black';
+    font-size:25pt;
+    color:red;
+    border-color: red;
+    border-radius: 10px;
+    border-width: 5px;
+    padding: 10px;
+    outline: none;
+}
+.input-nama::-webkit-input-placeholder{
+    color: red;
+}
+.input-nama::-moz-placeholder{
+    color: red;
+}
+.input-nama:-ms-input-placeholder{
+    color: red;
+}
+.input-nama::-ms-input-placeholder{
+    color: red;
+}
+.input-nama::placeholder{
+    color: red;
+}
