@@ -21,21 +21,21 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_69 = function() {
+(lib.CachedBmp_75 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_3"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_68 = function() {
+(lib.CachedBmp_74 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_67 = function() {
+(lib.CachedBmp_73 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
@@ -176,13 +176,13 @@ p._updateVisibility = _updateVisibility;
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_67();
+	this.instance = new lib.CachedBmp_73();
 	this.instance.setTransform(-166.45,-57.45,0.2804,0.2804);
 
-	this.instance_1 = new lib.CachedBmp_68();
+	this.instance_1 = new lib.CachedBmp_74();
 	this.instance_1.setTransform(-166.45,-57.45,0.2804,0.2804);
 
-	this.instance_2 = new lib.CachedBmp_69();
+	this.instance_2 = new lib.CachedBmp_75();
 	this.instance_2.setTransform(-166.45,-57.45,0.2804,0.2804);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).wait(1));
@@ -573,16 +573,16 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CachedBmp_1.png?1623422573693", id:"CachedBmp_1"},
-		{src:"images/Projek Lab PBK_atlas_.png?1623422573628", id:"Projek Lab PBK_atlas_"},
-		{src:"images/Projek Lab PBK_atlas_2.png?1623422573628", id:"Projek Lab PBK_atlas_2"},
-		{src:"images/Projek Lab PBK_atlas_3.png?1623422573628", id:"Projek Lab PBK_atlas_3"},
-		{src:"images/Projek Lab PBK_atlas_4.png?1623422573629", id:"Projek Lab PBK_atlas_4"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1623422573693", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1623422573693", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1623422573693", id:"an.TextInput"},
-		{src:"components/ui/src/css.js?1623422573693", id:"an.CSS"},
-		{src:"components/ui/src/button.js?1623422573693", id:"an.Button"}
+		{src:"images/CachedBmp_1.png?1623422710286", id:"CachedBmp_1"},
+		{src:"images/Projek Lab PBK_atlas_.png?1623422710227", id:"Projek Lab PBK_atlas_"},
+		{src:"images/Projek Lab PBK_atlas_2.png?1623422710228", id:"Projek Lab PBK_atlas_2"},
+		{src:"images/Projek Lab PBK_atlas_3.png?1623422710228", id:"Projek Lab PBK_atlas_3"},
+		{src:"images/Projek Lab PBK_atlas_4.png?1623422710228", id:"Projek Lab PBK_atlas_4"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1623422710286", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1623422710286", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1623422710286", id:"an.TextInput"},
+		{src:"components/ui/src/css.js?1623422710286", id:"an.CSS"},
+		{src:"components/ui/src/button.js?1623422710286", id:"an.Button"}
 	],
 	preloads: []
 };
