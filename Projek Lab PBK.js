@@ -22,21 +22,21 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_28 = function() {
+(lib.CachedBmp_32 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_27 = function() {
+(lib.CachedBmp_31 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_26 = function() {
+(lib.CachedBmp_30 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
@@ -64,7 +64,7 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_25 = function() {
+(lib.CachedBmp_29 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_3"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
@@ -184,13 +184,13 @@ p._updateVisibility = _updateVisibility;
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_26();
+	this.instance = new lib.CachedBmp_30();
 	this.instance.setTransform(-166.45,-57.45,0.2804,0.2804);
 
-	this.instance_1 = new lib.CachedBmp_27();
+	this.instance_1 = new lib.CachedBmp_31();
 	this.instance_1.setTransform(-166.45,-57.45,0.2804,0.2804);
 
-	this.instance_2 = new lib.CachedBmp_28();
+	this.instance_2 = new lib.CachedBmp_32();
 	this.instance_2.setTransform(-166.45,-57.45,0.2804,0.2804);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).wait(1));
@@ -253,7 +253,7 @@ p._updateVisibility = _updateVisibility;
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_25();
+	this.instance = new lib.CachedBmp_29();
 	this.instance.setTransform(-304.4,-107.45,0.4574,0.4574);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -445,7 +445,7 @@ p._updateVisibility = _updateVisibility;
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.bgPilihanA},{t:this.soalQuiz},{t:this.timerSoal},{t:this.benar},{t:this.pilihanC},{t:this.pilihanB},{t:this.pilihanD},{t:this.noSoal},{t:this.pilihanA,p:{scaleX:0.9545,scaleY:0.9545,x:221.85,y:680.65,text:"A. Pilihan",lineWidth:694}}]},49).to({state:[{t:this.pilihanA,p:{scaleX:1,scaleY:1,x:222,y:79.45,text:"Benar :",lineWidth:844}}]},1).to({state:[]},1).to({state:[]},1).wait(1));
 
 	// SelamatDatang
-	this.instance = new lib.an_CSS({'id': '', 'href':'assets/style.css'});
+	this.instance = new lib.an_CSS({'id': '', 'href':'https://muhammadfattah.github.io/projek-lab-pbk/assets/style.css'});
 
 	this.instance.setTransform(2461.9,260.2,8.7037,8.7037,0,0,0,50.1,11.1);
 
@@ -541,16 +541,16 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CachedBmp_1.png?1623373533347", id:"CachedBmp_1"},
-		{src:"images/Projek Lab PBK_atlas_.png?1623373533275", id:"Projek Lab PBK_atlas_"},
-		{src:"images/Projek Lab PBK_atlas_2.png?1623373533275", id:"Projek Lab PBK_atlas_2"},
-		{src:"images/Projek Lab PBK_atlas_3.png?1623373533276", id:"Projek Lab PBK_atlas_3"},
-		{src:"images/Projek Lab PBK_atlas_4.png?1623373533276", id:"Projek Lab PBK_atlas_4"},
-		{src:"images/Projek Lab PBK_atlas_5.png?1623373533277", id:"Projek Lab PBK_atlas_5"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1623373533347", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1623373533347", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1623373533347", id:"an.TextInput"},
-		{src:"components/ui/src/css.js?1623373533347", id:"an.CSS"}
+		{src:"images/CachedBmp_1.png?1623373714890", id:"CachedBmp_1"},
+		{src:"images/Projek Lab PBK_atlas_.png?1623373714824", id:"Projek Lab PBK_atlas_"},
+		{src:"images/Projek Lab PBK_atlas_2.png?1623373714824", id:"Projek Lab PBK_atlas_2"},
+		{src:"images/Projek Lab PBK_atlas_3.png?1623373714825", id:"Projek Lab PBK_atlas_3"},
+		{src:"images/Projek Lab PBK_atlas_4.png?1623373714825", id:"Projek Lab PBK_atlas_4"},
+		{src:"images/Projek Lab PBK_atlas_5.png?1623373714825", id:"Projek Lab PBK_atlas_5"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1623373714891", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1623373714891", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1623373714891", id:"an.TextInput"},
+		{src:"components/ui/src/css.js?1623373714891", id:"an.CSS"}
 	],
 	preloads: []
 };
