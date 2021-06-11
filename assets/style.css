@@ -36,6 +36,7 @@
     outline: none;
     background-color: red;
 }
+
 .button.active{
     background-color: white;
     color: red;
