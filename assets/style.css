@@ -25,6 +25,7 @@
 }
 
 .button{
+    line-height: 210.91px;
     cursor: pointer;
     text-align: left !important;
     font-family: 'Cooper Black';
