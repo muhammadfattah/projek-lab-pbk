@@ -35,6 +35,6 @@
     background: red;
 }
 .button.active{
-    background-color: black;
+    background-color: transparent;
     color: red;
 }
