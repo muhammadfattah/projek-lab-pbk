@@ -21,21 +21,21 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_21 = function() {
+(lib.CachedBmp_27 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_3"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_20 = function() {
+(lib.CachedBmp_26 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_19 = function() {
+(lib.CachedBmp_25 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
@@ -176,13 +176,13 @@ p._updateVisibility = _updateVisibility;
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_19();
+	this.instance = new lib.CachedBmp_25();
 	this.instance.setTransform(-166.45,-57.45,0.2804,0.2804);
 
-	this.instance_1 = new lib.CachedBmp_20();
+	this.instance_1 = new lib.CachedBmp_26();
 	this.instance_1.setTransform(-166.45,-57.45,0.2804,0.2804);
 
-	this.instance_2 = new lib.CachedBmp_21();
+	this.instance_2 = new lib.CachedBmp_27();
 	this.instance_2.setTransform(-166.45,-57.45,0.2804,0.2804);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).wait(1));
@@ -401,18 +401,18 @@ p._updateVisibility = _updateVisibility;
 		let waktu = waktuPerSoal;
 		let cekJawaban = false;
 		
-		this.soalQuiz.text = quiz[indexSoal].soal;
-		pilihanA.innerHTML = 'A. '+quiz[indexSoal].pilihA;
-		pilihanB.innerHTML = 'B. '+quiz[indexSoal].pilihB;
-		pilihanC.innerHTML = 'C. '+quiz[indexSoal].pilihC;
-		pilihanD.innerHTML = 'D. '+quiz[indexSoal].pilihD;
-		this.noSoal.text = (indexSoal+1)+'.';
-		this.timerSoal.text = 'Waktu : '+waktu+' detik';
-		this.benar.text = 'Benar : '+jumlahBenar;
+		this.soalQuizBergambar.text = quiz[indexSoal].soal;
+		pilihanABergambar.innerHTML = 'A. '+quiz[indexSoal].pilihA;
+		pilihanBBergambar.innerHTML = 'B. '+quiz[indexSoal].pilihB;
+		pilihanCBergambar.innerHTML = 'C. '+quiz[indexSoal].pilihC;
+		pilihanDBergambar.innerHTML = 'D. '+quiz[indexSoal].pilihD;
+		this.noSoalBergambar.text = (indexSoal+1)+'.';
+		this.timerSoalBergambar.text = 'Waktu : '+waktu+' detik';
+		this.benarBergambar.text = 'Benar : '+jumlahBenar;
 		
 		let timer = setInterval(()=>{
 			waktu-=1;
-			this.timerSoal.text = 'Waktu : '+waktu+' detik';
+			this.timerSoalBergambar.text = 'Waktu : '+waktu+' detik';
 			if(waktu==0){
 				clearInterval(timer);
 				if(cekJawaban){
@@ -424,9 +424,9 @@ p._updateVisibility = _updateVisibility;
 			}
 		},1000);
 		
-		pilihanA.addEventListener('click', pilihA = ()=>{
+		pilihanABergambar.addEventListener('click', pilihA = ()=>{
 			hapusButtonAktif();
-			pilihanA.classList.add('active');
+			pilihanABergambar.classList.add('active');
 			if(quiz[indexSoal].kunciJawaban=='A'){
 				cekJawaban = true;
 			}else{
@@ -434,9 +434,9 @@ p._updateVisibility = _updateVisibility;
 			}
 		});
 		
-		pilihanB.addEventListener('click', pilihB =()=>{
+		pilihanBBergambar.addEventListener('click', pilihB =()=>{
 			hapusButtonAktif();
-			pilihanB.classList.add('active');
+			pilihanBBergambar.classList.add('active');
 			if(quiz[indexSoal].kunciJawaban=='B'){
 				cekJawaban = true;
 			}else{
@@ -444,9 +444,9 @@ p._updateVisibility = _updateVisibility;
 			}
 		});
 		
-		pilihanC.addEventListener('click',pilihC =()=>{
+		pilihanCBergambar.addEventListener('click',pilihC =()=>{
 			hapusButtonAktif();
-			pilihanC.classList.add('active');
+			pilihanCBergambar.classList.add('active');
 			if(quiz[indexSoal].kunciJawaban=='C'){
 				cekJawaban = true;
 			}else{
@@ -454,9 +454,9 @@ p._updateVisibility = _updateVisibility;
 			}
 		});
 		
-		pilihanD.addEventListener('click',pilihD =()=>{
+		pilihanDBergambar.addEventListener('click',pilihD =()=>{
 			hapusButtonAktif();
-			pilihanD.classList.add('active');
+			pilihanDBergambar.classList.add('active');
 			if(quiz[indexSoal].kunciJawaban=='D'){
 				cekJawaban = true;
 			}else{
@@ -465,17 +465,17 @@ p._updateVisibility = _updateVisibility;
 		});
 		
 		const hapusButtonAktif = ()=>{
-			pilihanA.classList.remove('active');
-			pilihanB.classList.remove('active');
-			pilihanC.classList.remove('active');
-			pilihanD.classList.remove('active');
+			pilihanABergambar.classList.remove('active');
+			pilihanBBergambar.classList.remove('active');
+			pilihanCBergambar.classList.remove('active');
+			pilihanDBergambar.classList.remove('active');
 		}
 		
 		const hapusEventTombol = ()=>{
-			pilihanA.removeEventListener('click',pilihA);
-			pilihanB.removeEventListener('click',pilihB);
-			pilihanC.removeEventListener('click',pilihC);
-			pilihanD.removeEventListener('click',pilihD);
+			pilihanABergambar.removeEventListener('click',pilihA);
+			pilihanBBergambar.removeEventListener('click',pilihB);
+			pilihanCBergambar.removeEventListener('click',pilihC);
+			pilihanDBergambar.removeEventListener('click',pilihD);
 		}
 	}
 	this.frame_51 = function() {
@@ -567,53 +567,53 @@ p._updateVisibility = _updateVisibility;
 
 	this.gambarQuiz.setTransform(1510.25,394.9,2.9508,2.9508,0,0,0,50.1,50.1);
 
-	this.pilihanD_1 = new lib.an_Button({'id': 'pilihanD_1', 'label':'Pilihan A', 'disabled':false, 'visible':true, 'class':'button'});
+	this.pilihanDBergambar = new lib.an_Button({'id': 'pilihanDBergambar', 'label':'Pilihan A', 'disabled':false, 'visible':true, 'class':'button'});
 
-	this.pilihanD_1.setTransform(1380.65,855.6,6.6323,4.7934,0,0,0,50.1,11.1);
+	this.pilihanDBergambar.setTransform(1380.65,855.6,6.6323,4.7934,0,0,0,50.1,11.1);
 
 	this.instance_5 = new lib.an_CSS({'id': 'instance_5', 'href':'https://muhammadfattah.github.io/projek-lab-pbk/assets/style.css'});
 
 	this.instance_5.setTransform(2405,343.65,8.7037,8.7037,0,0,0,50.1,11.1);
 
-	this.noSoal_1 = new cjs.Text("1.", "80px 'Cooper Black'", "#0066FF");
-	this.noSoal_1.name = "noSoal_1";
-	this.noSoal_1.lineHeight = 94;
-	this.noSoal_1.lineWidth = 100;
-	this.noSoal_1.parent = this;
-	this.noSoal_1.setTransform(118,249.05);
+	this.noSoalBergambar = new cjs.Text("1.", "80px 'Cooper Black'", "#0066FF");
+	this.noSoalBergambar.name = "noSoalBergambar";
+	this.noSoalBergambar.lineHeight = 94;
+	this.noSoalBergambar.lineWidth = 100;
+	this.noSoalBergambar.parent = this;
+	this.noSoalBergambar.setTransform(118,249.05);
 
-	this.benar_1 = new cjs.Text("Benar :", "80px 'Cooper Black'", "#0066FF");
-	this.benar_1.name = "benar_1";
-	this.benar_1.lineHeight = 94;
-	this.benar_1.lineWidth = 580;
-	this.benar_1.parent = this;
-	this.benar_1.setTransform(222,79.45);
+	this.benarBergambar = new cjs.Text("Benar :", "80px 'Cooper Black'", "#0066FF");
+	this.benarBergambar.name = "benarBergambar";
+	this.benarBergambar.lineHeight = 94;
+	this.benarBergambar.lineWidth = 580;
+	this.benarBergambar.parent = this;
+	this.benarBergambar.setTransform(222,79.45);
 
-	this.timerSoal_1 = new cjs.Text("Waktu :", "80px 'Cooper Black'", "#FF0000");
-	this.timerSoal_1.name = "timerSoal_1";
-	this.timerSoal_1.lineHeight = 94;
-	this.timerSoal_1.lineWidth = 794;
-	this.timerSoal_1.parent = this;
-	this.timerSoal_1.setTransform(918.05,82.55);
+	this.timerSoalBergambar = new cjs.Text("Waktu :", "80px 'Cooper Black'", "#FF0000");
+	this.timerSoalBergambar.name = "timerSoalBergambar";
+	this.timerSoalBergambar.lineHeight = 94;
+	this.timerSoalBergambar.lineWidth = 794;
+	this.timerSoalBergambar.parent = this;
+	this.timerSoalBergambar.setTransform(918.05,82.55);
 
-	this.soalQuiz_1 = new cjs.Text("Soal Quiz", "80px 'Cooper Black'", "#0066FF");
-	this.soalQuiz_1.name = "soalQuiz_1";
-	this.soalQuiz_1.lineHeight = 94;
-	this.soalQuiz_1.lineWidth = 1042;
-	this.soalQuiz_1.parent = this;
-	this.soalQuiz_1.setTransform(222.1,249.15,1.0542,1.0542);
+	this.soalQuizBergambar = new cjs.Text("Soal Quiz", "80px 'Cooper Black'", "#0066FF");
+	this.soalQuizBergambar.name = "soalQuizBergambar";
+	this.soalQuizBergambar.lineHeight = 94;
+	this.soalQuizBergambar.lineWidth = 1042;
+	this.soalQuizBergambar.parent = this;
+	this.soalQuizBergambar.setTransform(222.1,249.15,1.0542,1.0542);
 
-	this.pilihanA_1 = new lib.an_Button({'id': 'pilihanA_1', 'label':'Pilihan A', 'disabled':false, 'visible':true, 'class':'button'});
+	this.pilihanABergambar = new lib.an_Button({'id': 'pilihanABergambar', 'label':'Pilihan A', 'disabled':false, 'visible':true, 'class':'button'});
 
-	this.pilihanA_1.setTransform(552.3,732.2,6.6324,4.7934,0,0,0,50.1,11.1);
+	this.pilihanABergambar.setTransform(552.3,732.2,6.6324,4.7934,0,0,0,50.1,11.1);
 
-	this.pilihanB_1 = new lib.an_Button({'id': 'pilihanB_1', 'label':'Pilihan A', 'disabled':false, 'visible':true, 'class':'button'});
+	this.pilihanBBergambar = new lib.an_Button({'id': 'pilihanBBergambar', 'label':'Pilihan A', 'disabled':false, 'visible':true, 'class':'button'});
 
-	this.pilihanB_1.setTransform(552.5,855.6,6.6323,4.7934,0,0,0,50.1,11.1);
+	this.pilihanBBergambar.setTransform(552.5,855.6,6.6323,4.7934,0,0,0,50.1,11.1);
 
-	this.pilihanC_1 = new lib.an_Button({'id': 'pilihanC_1', 'label':'Pilihan A', 'disabled':false, 'visible':true, 'class':'button'});
+	this.pilihanCBergambar = new lib.an_Button({'id': 'pilihanCBergambar', 'label':'Pilihan A', 'disabled':false, 'visible':true, 'class':'button'});
 
-	this.pilihanC_1.setTransform(1380.65,732.2,6.6323,4.7934,0,0,0,50.1,11.1);
+	this.pilihanCBergambar.setTransform(1380.65,732.2,6.6323,4.7934,0,0,0,50.1,11.1);
 
 	this.instance_6 = new lib.LingkaranBiruSplashScreen();
 	this.instance_6.setTransform(1848.15,995.35,2.4537,2.4537,0,0,0,0,0.1);
@@ -627,7 +627,7 @@ p._updateVisibility = _updateVisibility;
 	this.instance_9 = new lib.LingkaranMerahSplashScreen();
 	this.instance_9.setTransform(116.95,-9.55,2.3027,2.3027,0,0,0,0.1,0.2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.pilihanC_1},{t:this.pilihanB_1},{t:this.pilihanA_1},{t:this.soalQuiz_1},{t:this.timerSoal_1},{t:this.benar_1},{t:this.noSoal_1},{t:this.instance_5},{t:this.pilihanD_1},{t:this.gambarQuiz}]},50).to({state:[]},1).wait(2));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.pilihanCBergambar},{t:this.pilihanBBergambar},{t:this.pilihanABergambar},{t:this.soalQuizBergambar},{t:this.timerSoalBergambar},{t:this.benarBergambar},{t:this.noSoalBergambar},{t:this.instance_5},{t:this.pilihanDBergambar},{t:this.gambarQuiz}]},50).to({state:[]},1).wait(2));
 
 	// refresh
 	this.text = new cjs.Text("Refresh", "80px 'Cooper Black'", "#0066FF");
@@ -753,17 +753,17 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CachedBmp_1.png?1623425155695", id:"CachedBmp_1"},
-		{src:"images/Projek Lab PBK_atlas_.png?1623425155614", id:"Projek Lab PBK_atlas_"},
-		{src:"images/Projek Lab PBK_atlas_2.png?1623425155614", id:"Projek Lab PBK_atlas_2"},
-		{src:"images/Projek Lab PBK_atlas_3.png?1623425155614", id:"Projek Lab PBK_atlas_3"},
-		{src:"images/Projek Lab PBK_atlas_4.png?1623425155615", id:"Projek Lab PBK_atlas_4"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1623425155695", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1623425155695", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1623425155695", id:"an.TextInput"},
-		{src:"components/ui/src/image.js?1623425155695", id:"an.Image"},
-		{src:"components/ui/src/css.js?1623425155695", id:"an.CSS"},
-		{src:"components/ui/src/button.js?1623425155695", id:"an.Button"}
+		{src:"images/CachedBmp_1.png?1623425402349", id:"CachedBmp_1"},
+		{src:"images/Projek Lab PBK_atlas_.png?1623425402272", id:"Projek Lab PBK_atlas_"},
+		{src:"images/Projek Lab PBK_atlas_2.png?1623425402272", id:"Projek Lab PBK_atlas_2"},
+		{src:"images/Projek Lab PBK_atlas_3.png?1623425402274", id:"Projek Lab PBK_atlas_3"},
+		{src:"images/Projek Lab PBK_atlas_4.png?1623425402274", id:"Projek Lab PBK_atlas_4"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1623425402349", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1623425402349", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1623425402349", id:"an.TextInput"},
+		{src:"components/ui/src/image.js?1623425402349", id:"an.Image"},
+		{src:"components/ui/src/css.js?1623425402349", id:"an.CSS"},
+		{src:"components/ui/src/button.js?1623425402349", id:"an.Button"}
 	],
 	preloads: []
 };
