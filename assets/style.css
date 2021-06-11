@@ -25,6 +25,7 @@
 }
 
 .button{
+    vertical-align: middle;
     font-family: 'Cooper Black';
     font-size:25pt;
     color:white;
