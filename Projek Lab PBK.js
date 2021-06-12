@@ -14,118 +14,118 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_17 = function() {
+(lib.CachedBmp_50 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_3"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_16 = function() {
+(lib.CachedBmp_110 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_3"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_15 = function() {
+(lib.CachedBmp_109 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_14 = function() {
+(lib.CachedBmp_108 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_13 = function() {
+(lib.CachedBmp_46 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_3"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_12 = function() {
+(lib.CachedBmp_45 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_3"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_11 = function() {
+(lib.CachedBmp_44 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_10 = function() {
+(lib.CachedBmp_43 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_9 = function() {
+(lib.CachedBmp_42 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_8 = function() {
+(lib.CachedBmp_41 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_7 = function() {
+(lib.CachedBmp_40 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_6 = function() {
+(lib.CachedBmp_39 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_5 = function() {
+(lib.CachedBmp_38 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_4 = function() {
+(lib.CachedBmp_37 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_3 = function() {
-	this.initialize(img.CachedBmp_3);
+(lib.CachedBmp_36 = function() {
+	this.initialize(img.CachedBmp_36);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,2153,249);
 
 
-(lib.CachedBmp_2 = function() {
+(lib.CachedBmp_35 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_1 = function() {
+(lib.CachedBmp_107 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
@@ -159,7 +159,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_17();
+	this.instance = new lib.CachedBmp_50();
 	this.instance.setTransform(-260.15,-57.05,0.3308,0.3308);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -190,13 +190,13 @@ p._updateVisibility = _updateVisibility;
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_14();
+	this.instance = new lib.CachedBmp_108();
 	this.instance.setTransform(-166.45,-57.45,0.2804,0.2804);
 
-	this.instance_1 = new lib.CachedBmp_15();
+	this.instance_1 = new lib.CachedBmp_109();
 	this.instance_1.setTransform(-166.45,-57.45,0.2804,0.2804);
 
-	this.instance_2 = new lib.CachedBmp_16();
+	this.instance_2 = new lib.CachedBmp_110();
 	this.instance_2.setTransform(-166.45,-57.45,0.2804,0.2804);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).wait(1));
@@ -211,10 +211,10 @@ p.nominalBounds = new cjs.Rectangle(-166.4,-57.4,332.8,114.9);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_13();
+	this.instance = new lib.CachedBmp_46();
 	this.instance.setTransform(-116,-115.95,0.2171,0.2171);
 
-	this.instance_1 = new lib.CachedBmp_12();
+	this.instance_1 = new lib.CachedBmp_45();
 	this.instance_1.setTransform(16,-89.4,0.2171,0.2171);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
@@ -228,7 +228,7 @@ p.nominalBounds = new cjs.Rectangle(-166.4,-57.4,332.8,114.9);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_11();
+	this.instance = new lib.CachedBmp_44();
 	this.instance.setTransform(-115.95,-115.95,0.1766,0.1766);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -291,12 +291,14 @@ p._updateVisibility = _updateVisibility;
 
 // stage content:
 (lib.ProjekLabPBK = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{quizTulisanFrame:49,quizBergambarFrame:50,refreshFrame:52,hasilFrame:51,selamatDatangFrame:48});
+	this.initialize(mode,startPosition,loop,{soundTrackFrame:0,quizTulisanFrame:49,quizBergambarFrame:50,refreshFrame:52,hasilFrame:51,selamatDatangFrame:48});
 
 	// timeline functions:
+	this.frame_0 = function() {
+		createjs.Sound.play('soundTrack');
+	}
 	this.frame_48 = function() {
 		this.stop();
-		
 		indexSoal = -1;
 		jumlahBenar = 0;
 		inputNama.placeholder = 'Masukkan nama...';
@@ -354,13 +356,17 @@ p._updateVisibility = _updateVisibility;
 			}
 			if(waktu==0){
 				tampilJawabanBenar();
+				hapusEventTombol();
 				if(cekJawaban){
 					jumlahBenar+=1;
+					createjs.Sound.play("correctSound");
+				}else{
+					createjs.Sound.play("errorSound");
 				}
+				this.benar.text = 'Benar : '+jumlahBenar;
 			}
 			if(waktu==-3){
 				clearInterval(timer);
-				hapusEventTombol();
 				hapusButtonAktif();
 				this.removeAllChildren();
 				this.gotoAndStop('refreshFrame');
@@ -459,13 +465,22 @@ p._updateVisibility = _updateVisibility;
 		
 		let timer = setInterval(()=>{
 			waktu-=1;
-			this.timerSoalBergambar.text = 'Waktu : '+waktu+' detik';
+			if(waktu>=0){
+				this.timerSoalBergambar.text = 'Waktu : '+waktu+' detik';
+			}
 			if(waktu==0){
-				clearInterval(timer);
+				tampilJawabanBenar();
+				hapusEventTombolBergambar();
 				if(cekJawaban){
 					jumlahBenar+=1;
+					createjs.Sound.play("correctSound");
+				}else{
+					createjs.Sound.play("errorSound");
 				}
-				hapusEventTombolBergambar();
+				this.benar.text = 'Benar : '+jumlahBenar;
+			}
+			if(waktu==-3){
+				clearInterval(timer);
 				hapusButtonAktifBergambar();
 				this.removeAllChildren();
 				this.gotoAndStop('refreshFrame');
@@ -473,6 +488,7 @@ p._updateVisibility = _updateVisibility;
 		},1000);
 		
 		pilihanABergambar.addEventListener('click', pilihA = ()=>{
+			createjs.Sound.play("buttonClickSound");
 			hapusButtonAktifBergambar();
 			pilihanABergambar.classList.add('active');
 			if(quiz[indexSoal].kunciJawaban=='A'){
@@ -483,6 +499,7 @@ p._updateVisibility = _updateVisibility;
 		});
 		
 		pilihanBBergambar.addEventListener('click', pilihB =()=>{
+			createjs.Sound.play("buttonClickSound");
 			hapusButtonAktifBergambar();
 			pilihanBBergambar.classList.add('active');
 			if(quiz[indexSoal].kunciJawaban=='B'){
@@ -493,6 +510,7 @@ p._updateVisibility = _updateVisibility;
 		});
 		
 		pilihanCBergambar.addEventListener('click',pilihC =()=>{
+			createjs.Sound.play("buttonClickSound");
 			hapusButtonAktifBergambar();
 			pilihanCBergambar.classList.add('active');
 			if(quiz[indexSoal].kunciJawaban=='C'){
@@ -503,6 +521,7 @@ p._updateVisibility = _updateVisibility;
 		});
 		
 		pilihanDBergambar.addEventListener('click',pilihD =()=>{
+			createjs.Sound.play("buttonClickSound");
 			hapusButtonAktifBergambar();
 			pilihanDBergambar.classList.add('active');
 			if(quiz[indexSoal].kunciJawaban=='D'){
@@ -525,6 +544,21 @@ p._updateVisibility = _updateVisibility;
 			pilihanCBergambar.removeEventListener('click',pilihC);
 			pilihanDBergambar.removeEventListener('click',pilihD);
 		}
+		
+		const tampilJawabanBenar = ()=>{
+			if(quiz[indexSoal].kunciJawaban=='A'){
+				pilihanABergambar.classList.add('benar');
+			}
+			if(quiz[indexSoal].kunciJawaban=='B'){
+				pilihanBBergambar.classList.add('benar');
+			}
+			if(quiz[indexSoal].kunciJawaban=='C'){
+				pilihanCBergambar.classList.add('benar');
+			}
+			if(quiz[indexSoal].kunciJawaban=='D'){
+				pilihanDBergambar.classList.add('benar');
+			}
+		}
 	}
 	this.frame_51 = function() {
 		this.stop();
@@ -538,12 +572,13 @@ p._updateVisibility = _updateVisibility;
 		}
 		
 		this.buttonUlang.addEventListener('click',eventButtonUlang = ()=>{
-				if(confirm('Ulangi quiz?')){
-					namaUser = '';
-					this.buttonUlang.removeEventListener('click',eventButtonUlang);
-					this.removeAllChildren();
-					this.gotoAndStop('selamatDatangFrame');
-				}
+			createjs.Sound.play("buttonClickSound");
+			if(confirm('Ulangi quiz?')){
+				namaUser = '';
+				this.buttonUlang.removeEventListener('click',eventButtonUlang);
+				this.removeAllChildren();
+				this.gotoAndStop('selamatDatangFrame');
+			}
 		});
 	}
 	this.frame_52 = function() {
@@ -562,7 +597,7 @@ p._updateVisibility = _updateVisibility;
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(48).call(this.frame_48).wait(1).call(this.frame_49).wait(1).call(this.frame_50).wait(1).call(this.frame_51).wait(1).call(this.frame_52).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(48).call(this.frame_48).wait(1).call(this.frame_49).wait(1).call(this.frame_50).wait(1).call(this.frame_51).wait(1).call(this.frame_52).wait(1));
 
 	// quizTulisan
 	this.myStyle = new lib.an_CSS({'id': 'myStyle', 'href':'https://muhammadfattah.github.io/projek-lab-pbk/assets/style.css'});
@@ -723,7 +758,7 @@ p._updateVisibility = _updateVisibility;
 	this.instance_11 = new lib.LingkaranBiruSplashScreen();
 	this.instance_11.setTransform(1601.3,1057.55,1.8976,1.8976);
 
-	this.instance_12 = new lib.CachedBmp_2();
+	this.instance_12 = new lib.CachedBmp_35();
 	this.instance_12.setTransform(1016.6,699.25,0.5,0.5);
 
 	this.buttonUlang = new lib.myButton();
@@ -741,7 +776,7 @@ p._updateVisibility = _updateVisibility;
 	this.hasilNamaUser.parent = this;
 	this.hasilNamaUser.setTransform(960,217.65);
 
-	this.instance_14 = new lib.CachedBmp_1();
+	this.instance_14 = new lib.CachedBmp_107();
 	this.instance_14.setTransform(459.45,197.6,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_14},{t:this.hasilNamaUser},{t:this.instance_13},{t:this.buttonUlang},{t:this.instance_12},{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.hasilBenar},{t:this.pesan}]},51).to({state:[]},1).wait(1));
@@ -763,7 +798,7 @@ p._updateVisibility = _updateVisibility;
 	this.instance_18 = new lib.LingkaranBiruSplashScreen();
 	this.instance_18.setTransform(1601.3,1057.55,1.8976,1.8976);
 
-	this.instance_19 = new lib.CachedBmp_5();
+	this.instance_19 = new lib.CachedBmp_38();
 	this.instance_19.setTransform(1016.6,699.25,0.5,0.5);
 
 	this.buttonMulai = new lib.myButton();
@@ -774,10 +809,10 @@ p._updateVisibility = _updateVisibility;
 
 	this.inputNama.setTransform(1211.95,540.65,8.2265,5.8494,0,0,0,50.2,11.2);
 
-	this.instance_20 = new lib.CachedBmp_4();
+	this.instance_20 = new lib.CachedBmp_37();
 	this.instance_20.setTransform(436.9,475.15,0.5,0.5);
 
-	this.instance_21 = new lib.CachedBmp_3();
+	this.instance_21 = new lib.CachedBmp_36();
 	this.instance_21.setTransform(502.5,235.2,0.5,0.5);
 
 	this.instance_22 = new lib.LingkaranBiruSplashScreen();
@@ -786,22 +821,22 @@ p._updateVisibility = _updateVisibility;
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_22},{t:this.instance_21},{t:this.instance_20},{t:this.inputNama},{t:this.buttonMulai},{t:this.instance_19},{t:this.instance_18},{t:this.instance_17},{t:this.instance_16},{t:this.instance_15},{t:this.myStyle_2}]},48).to({state:[]},1).wait(4));
 
 	// TextYukQuiz
-	this.instance_23 = new lib.CachedBmp_6();
+	this.instance_23 = new lib.CachedBmp_39();
 	this.instance_23.setTransform(673.2,630.15,0.5,0.5);
 
 	this.instance_24 = new lib.TulisanYukQuiz();
 	this.instance_24.setTransform(960.15,540.05,1.5113,1.5113,0,0,0,0.1,0);
 
-	this.instance_25 = new lib.CachedBmp_7();
+	this.instance_25 = new lib.CachedBmp_40();
 	this.instance_25.setTransform(673.2,630.15,0.5,0.5);
 
-	this.instance_26 = new lib.CachedBmp_8();
+	this.instance_26 = new lib.CachedBmp_41();
 	this.instance_26.setTransform(673.2,630.15,0.5,0.5);
 
-	this.instance_27 = new lib.CachedBmp_9();
+	this.instance_27 = new lib.CachedBmp_42();
 	this.instance_27.setTransform(673.2,630.15,0.5,0.5);
 
-	this.instance_28 = new lib.CachedBmp_10();
+	this.instance_28 = new lib.CachedBmp_43();
 	this.instance_28.setTransform(673.2,630.15,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_24},{t:this.instance_23}]}).to({state:[{t:this.instance_24},{t:this.instance_25}]},11).to({state:[{t:this.instance_24},{t:this.instance_26}]},12).to({state:[{t:this.instance_24},{t:this.instance_27}]},12).to({state:[{t:this.instance_24},{t:this.instance_28}]},12).to({state:[]},1).wait(5));
@@ -843,18 +878,21 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CachedBmp_3.png?1623466976843", id:"CachedBmp_3"},
-		{src:"images/Projek Lab PBK_atlas_.png?1623466976771", id:"Projek Lab PBK_atlas_"},
-		{src:"images/Projek Lab PBK_atlas_2.png?1623466976771", id:"Projek Lab PBK_atlas_2"},
-		{src:"images/Projek Lab PBK_atlas_3.png?1623466976772", id:"Projek Lab PBK_atlas_3"},
-		{src:"images/Projek Lab PBK_atlas_4.png?1623466976773", id:"Projek Lab PBK_atlas_4"},
-		{src:"sounds/buttonClickSound.mp3?1623466976843", id:"buttonClickSound"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1623466976843", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1623466976843", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1623466976843", id:"an.TextInput"},
-		{src:"components/ui/src/image.js?1623466976843", id:"an.Image"},
-		{src:"components/ui/src/css.js?1623466976843", id:"an.CSS"},
-		{src:"components/ui/src/button.js?1623466976843", id:"an.Button"}
+		{src:"images/CachedBmp_36.png?1623473350344", id:"CachedBmp_36"},
+		{src:"images/Projek Lab PBK_atlas_.png?1623473350217", id:"Projek Lab PBK_atlas_"},
+		{src:"images/Projek Lab PBK_atlas_2.png?1623473350217", id:"Projek Lab PBK_atlas_2"},
+		{src:"images/Projek Lab PBK_atlas_3.png?1623473350217", id:"Projek Lab PBK_atlas_3"},
+		{src:"images/Projek Lab PBK_atlas_4.png?1623473350218", id:"Projek Lab PBK_atlas_4"},
+		{src:"sounds/buttonClickSound.mp3?1623473350344", id:"buttonClickSound"},
+		{src:"sounds/correctSound.mp3?1623473350344", id:"correctSound"},
+		{src:"sounds/errorSound.mp3?1623473350344", id:"errorSound"},
+		{src:"sounds/soundTrack.mp3?1623473350344", id:"soundTrack"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1623473350344", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1623473350344", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1623473350344", id:"an.TextInput"},
+		{src:"components/ui/src/image.js?1623473350344", id:"an.Image"},
+		{src:"components/ui/src/css.js?1623473350344", id:"an.CSS"},
+		{src:"components/ui/src/button.js?1623473350344", id:"an.Button"}
 	],
 	preloads: []
 };
