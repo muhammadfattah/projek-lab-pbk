@@ -43,8 +43,8 @@
 
 .button.benar::after{
     font-size: 25pt;
-    margin-left: 20px;
-    display: inline-block;
+    position: relative;
+    left: +5;
     content: '✕';
     color: white;
 }
