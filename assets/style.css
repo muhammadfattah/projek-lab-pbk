@@ -42,7 +42,8 @@
 }
 
 .button.benar::after{
-    margin-left: 5px;
+    font-size: 25pt;
+    margin-left: 20px;
     display: inline-block;
     content: '✕';
     color: white;
