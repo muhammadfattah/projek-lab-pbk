@@ -41,12 +41,9 @@
     color: red;
 }
 
-.button.benar::after{
-    font-size: 25pt;
-    position: relative;
-    left: +5;
-    content: '✕';
-    color: white;
+.button.benar{
+    color: white !important;
+    background-color: limegreen !important;
 }
 
 .img{
