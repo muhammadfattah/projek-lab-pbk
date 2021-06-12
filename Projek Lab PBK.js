@@ -21,21 +21,21 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_162 = function() {
+(lib.CachedBmp_166 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_3"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_161 = function() {
+(lib.CachedBmp_165 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_160 = function() {
+(lib.CachedBmp_164 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
@@ -125,7 +125,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,2153,249);
 
 
 
-(lib.CachedBmp_159 = function() {
+(lib.CachedBmp_163 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
@@ -190,13 +190,13 @@ p._updateVisibility = _updateVisibility;
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_160();
+	this.instance = new lib.CachedBmp_164();
 	this.instance.setTransform(-166.45,-57.45,0.2804,0.2804);
 
-	this.instance_1 = new lib.CachedBmp_161();
+	this.instance_1 = new lib.CachedBmp_165();
 	this.instance_1.setTransform(-166.45,-57.45,0.2804,0.2804);
 
-	this.instance_2 = new lib.CachedBmp_162();
+	this.instance_2 = new lib.CachedBmp_166();
 	this.instance_2.setTransform(-166.45,-57.45,0.2804,0.2804);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).wait(1));
@@ -781,7 +781,7 @@ p._updateVisibility = _updateVisibility;
 	this.hasilNamaUser.parent = this;
 	this.hasilNamaUser.setTransform(960,217.65);
 
-	this.instance_14 = new lib.CachedBmp_159();
+	this.instance_14 = new lib.CachedBmp_163();
 	this.instance_14.setTransform(459.45,197.6,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_14},{t:this.hasilNamaUser},{t:this.instance_13},{t:this.buttonUlang},{t:this.instance_12},{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.hasilBenar},{t:this.pesan}]},51).to({state:[]},1).wait(1));
@@ -883,22 +883,22 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CachedBmp_36.png?1623479337303", id:"CachedBmp_36"},
-		{src:"images/Projek Lab PBK_atlas_.png?1623479337199", id:"Projek Lab PBK_atlas_"},
-		{src:"images/Projek Lab PBK_atlas_2.png?1623479337199", id:"Projek Lab PBK_atlas_2"},
-		{src:"images/Projek Lab PBK_atlas_3.png?1623479337199", id:"Projek Lab PBK_atlas_3"},
-		{src:"images/Projek Lab PBK_atlas_4.png?1623479337200", id:"Projek Lab PBK_atlas_4"},
-		{src:"sounds/buttonClickSound.mp3?1623479337303", id:"buttonClickSound"},
-		{src:"sounds/correctSound.mp3?1623479337303", id:"correctSound"},
-		{src:"sounds/errorSound.mp3?1623479337303", id:"errorSound"},
-		{src:"sounds/soundTrack.mp3?1623479337303", id:"soundTrack"},
-		{src:"sounds/timerSound.mp3?1623479337304", id:"timerSound"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1623479337304", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1623479337304", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1623479337304", id:"an.TextInput"},
-		{src:"components/ui/src/image.js?1623479337304", id:"an.Image"},
-		{src:"components/ui/src/css.js?1623479337304", id:"an.CSS"},
-		{src:"components/ui/src/button.js?1623479337304", id:"an.Button"}
+		{src:"images/CachedBmp_36.png?1623479554208", id:"CachedBmp_36"},
+		{src:"images/Projek Lab PBK_atlas_.png?1623479554109", id:"Projek Lab PBK_atlas_"},
+		{src:"images/Projek Lab PBK_atlas_2.png?1623479554110", id:"Projek Lab PBK_atlas_2"},
+		{src:"images/Projek Lab PBK_atlas_3.png?1623479554110", id:"Projek Lab PBK_atlas_3"},
+		{src:"images/Projek Lab PBK_atlas_4.png?1623479554110", id:"Projek Lab PBK_atlas_4"},
+		{src:"sounds/buttonClickSound.mp3?1623479554208", id:"buttonClickSound"},
+		{src:"sounds/correctSound.mp3?1623479554208", id:"correctSound"},
+		{src:"sounds/errorSound.mp3?1623479554208", id:"errorSound"},
+		{src:"sounds/soundTrack.mp3?1623479554208", id:"soundTrack"},
+		{src:"sounds/timerSound.mp3?1623479554208", id:"timerSound"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1623479554208", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1623479554208", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1623479554208", id:"an.TextInput"},
+		{src:"components/ui/src/image.js?1623479554208", id:"an.Image"},
+		{src:"components/ui/src/css.js?1623479554208", id:"an.CSS"},
+		{src:"components/ui/src/button.js?1623479554208", id:"an.Button"}
 	],
 	preloads: []
 };
