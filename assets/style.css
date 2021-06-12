@@ -36,14 +36,20 @@
     outline: none;
     background-color: red;
 }
+.button.active {
+    background-color: white;
+    color: red;
+}
+
+.button.benar::after{
+display: inline-block;
+content: '&#10006;';
+color: white;
+}
+
 .img{
     border-radius: 10px;
     /* border: 3px solid #0066FF; */
     border: 3px solid red;
 
-}
-
-.button.active{
-    background-color: white;
-    color: red;
 }
