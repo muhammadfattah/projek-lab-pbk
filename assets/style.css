@@ -42,9 +42,9 @@
 }
 
 .button.benar::after{
-display: inline-block;
-content: '&#10006;';
-color: white;
+    display: inline-block;
+    content: '✕';
+    color: white;
 }
 
 .img{

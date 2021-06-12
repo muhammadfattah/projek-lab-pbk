@@ -21,21 +21,21 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_94 = function() {
+(lib.CachedBmp_98 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_3"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_93 = function() {
+(lib.CachedBmp_97 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_92 = function() {
+(lib.CachedBmp_96 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
@@ -125,7 +125,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,2153,249);
 
 
 
-(lib.CachedBmp_91 = function() {
+(lib.CachedBmp_95 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
@@ -190,13 +190,13 @@ p._updateVisibility = _updateVisibility;
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_92();
+	this.instance = new lib.CachedBmp_96();
 	this.instance.setTransform(-166.45,-57.45,0.2804,0.2804);
 
-	this.instance_1 = new lib.CachedBmp_93();
+	this.instance_1 = new lib.CachedBmp_97();
 	this.instance_1.setTransform(-166.45,-57.45,0.2804,0.2804);
 
-	this.instance_2 = new lib.CachedBmp_94();
+	this.instance_2 = new lib.CachedBmp_98();
 	this.instance_2.setTransform(-166.45,-57.45,0.2804,0.2804);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).wait(1));
@@ -578,7 +578,7 @@ p._updateVisibility = _updateVisibility;
 	this.soalQuiz.parent = this;
 	this.soalQuiz.setTransform(222.1,249.15,1.0542,1.0542);
 
-	this.pilihanA = new lib.an_Button({'id': 'pilihanA', 'label':'Pilihan A', 'disabled':false, 'visible':true, 'class':'button'});
+	this.pilihanA = new lib.an_Button({'id': 'pilihanA', 'label':'Pilihan A', 'disabled':false, 'visible':true, 'class':'button benar'});
 
 	this.pilihanA.setTransform(552.3,732.2,6.6324,4.7934,0,0,0,50.1,11.1);
 
@@ -718,7 +718,7 @@ p._updateVisibility = _updateVisibility;
 	this.hasilNamaUser.parent = this;
 	this.hasilNamaUser.setTransform(960,217.65);
 
-	this.instance_14 = new lib.CachedBmp_91();
+	this.instance_14 = new lib.CachedBmp_95();
 	this.instance_14.setTransform(459.45,197.6,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_14},{t:this.hasilNamaUser},{t:this.instance_13},{t:this.buttonUlang},{t:this.instance_12},{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.hasilBenar},{t:this.pesan}]},51).to({state:[]},1).wait(1));
@@ -820,18 +820,18 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CachedBmp_68.png?1623463494063", id:"CachedBmp_68"},
-		{src:"images/Projek Lab PBK_atlas_.png?1623463493979", id:"Projek Lab PBK_atlas_"},
-		{src:"images/Projek Lab PBK_atlas_2.png?1623463493979", id:"Projek Lab PBK_atlas_2"},
-		{src:"images/Projek Lab PBK_atlas_3.png?1623463493981", id:"Projek Lab PBK_atlas_3"},
-		{src:"images/Projek Lab PBK_atlas_4.png?1623463493983", id:"Projek Lab PBK_atlas_4"},
-		{src:"sounds/buttonClickSound.mp3?1623463494064", id:"buttonClickSound"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1623463494064", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1623463494064", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1623463494064", id:"an.TextInput"},
-		{src:"components/ui/src/image.js?1623463494064", id:"an.Image"},
-		{src:"components/ui/src/css.js?1623463494064", id:"an.CSS"},
-		{src:"components/ui/src/button.js?1623463494064", id:"an.Button"}
+		{src:"images/CachedBmp_68.png?1623464940402", id:"CachedBmp_68"},
+		{src:"images/Projek Lab PBK_atlas_.png?1623464940305", id:"Projek Lab PBK_atlas_"},
+		{src:"images/Projek Lab PBK_atlas_2.png?1623464940305", id:"Projek Lab PBK_atlas_2"},
+		{src:"images/Projek Lab PBK_atlas_3.png?1623464940306", id:"Projek Lab PBK_atlas_3"},
+		{src:"images/Projek Lab PBK_atlas_4.png?1623464940309", id:"Projek Lab PBK_atlas_4"},
+		{src:"sounds/buttonClickSound.mp3?1623464940402", id:"buttonClickSound"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1623464940402", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1623464940402", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1623464940402", id:"an.TextInput"},
+		{src:"components/ui/src/image.js?1623464940402", id:"an.Image"},
+		{src:"components/ui/src/css.js?1623464940402", id:"an.CSS"},
+		{src:"components/ui/src/button.js?1623464940402", id:"an.Button"}
 	],
 	preloads: []
 };
