@@ -21,21 +21,21 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_211 = function() {
+(lib.CachedBmp_223 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_3"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_210 = function() {
+(lib.CachedBmp_222 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_209 = function() {
+(lib.CachedBmp_221 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
@@ -125,7 +125,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,2153,249);
 
 
 
-(lib.CachedBmp_208 = function() {
+(lib.CachedBmp_220 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
@@ -190,13 +190,13 @@ p._updateVisibility = _updateVisibility;
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_209();
+	this.instance = new lib.CachedBmp_221();
 	this.instance.setTransform(-166.45,-57.45,0.2804,0.2804);
 
-	this.instance_1 = new lib.CachedBmp_210();
+	this.instance_1 = new lib.CachedBmp_222();
 	this.instance_1.setTransform(-166.45,-57.45,0.2804,0.2804);
 
-	this.instance_2 = new lib.CachedBmp_211();
+	this.instance_2 = new lib.CachedBmp_223();
 	this.instance_2.setTransform(-166.45,-57.45,0.2804,0.2804);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).wait(1));
@@ -488,7 +488,7 @@ p._updateVisibility = _updateVisibility;
 				}else{
 					createjs.Sound.play("errorSound");
 				}
-				this.benar.text = 'Benar : '+jumlahBenar;
+				this.benarBergambar.text = 'Benar : '+jumlahBenar;
 			}
 			if(waktu==-3){
 				clearInterval(timer);
@@ -791,7 +791,7 @@ p._updateVisibility = _updateVisibility;
 	this.hasilNamaUser.parent = this;
 	this.hasilNamaUser.setTransform(960,217.65);
 
-	this.instance_14 = new lib.CachedBmp_208();
+	this.instance_14 = new lib.CachedBmp_220();
 	this.instance_14.setTransform(459.45,197.6,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_14},{t:this.hasilNamaUser},{t:this.instance_13},{t:this.buttonUlang},{t:this.instance_12},{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.hasilBenar},{t:this.pesan}]},51).to({state:[]},1).wait(1));
@@ -893,22 +893,22 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CachedBmp_173.png?1623482477352", id:"CachedBmp_173"},
-		{src:"images/Projek Lab PBK_atlas_.png?1623482477217", id:"Projek Lab PBK_atlas_"},
-		{src:"images/Projek Lab PBK_atlas_2.png?1623482477217", id:"Projek Lab PBK_atlas_2"},
-		{src:"images/Projek Lab PBK_atlas_3.png?1623482477219", id:"Projek Lab PBK_atlas_3"},
-		{src:"images/Projek Lab PBK_atlas_4.png?1623482477235", id:"Projek Lab PBK_atlas_4"},
-		{src:"sounds/buttonClickSound.mp3?1623482477352", id:"buttonClickSound"},
-		{src:"sounds/correctSound.mp3?1623482477352", id:"correctSound"},
-		{src:"sounds/errorSound.mp3?1623482477352", id:"errorSound"},
-		{src:"sounds/soundTrack.mp3?1623482477352", id:"soundTrack"},
-		{src:"sounds/timerSound.mp3?1623482477352", id:"timerSound"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1623482477352", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1623482477352", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1623482477352", id:"an.TextInput"},
-		{src:"components/ui/src/image.js?1623482477352", id:"an.Image"},
-		{src:"components/ui/src/css.js?1623482477352", id:"an.CSS"},
-		{src:"components/ui/src/button.js?1623482477352", id:"an.Button"}
+		{src:"images/CachedBmp_173.png?1623483894483", id:"CachedBmp_173"},
+		{src:"images/Projek Lab PBK_atlas_.png?1623483894357", id:"Projek Lab PBK_atlas_"},
+		{src:"images/Projek Lab PBK_atlas_2.png?1623483894357", id:"Projek Lab PBK_atlas_2"},
+		{src:"images/Projek Lab PBK_atlas_3.png?1623483894357", id:"Projek Lab PBK_atlas_3"},
+		{src:"images/Projek Lab PBK_atlas_4.png?1623483894358", id:"Projek Lab PBK_atlas_4"},
+		{src:"sounds/buttonClickSound.mp3?1623483894484", id:"buttonClickSound"},
+		{src:"sounds/correctSound.mp3?1623483894484", id:"correctSound"},
+		{src:"sounds/errorSound.mp3?1623483894484", id:"errorSound"},
+		{src:"sounds/soundTrack.mp3?1623483894484", id:"soundTrack"},
+		{src:"sounds/timerSound.mp3?1623483894484", id:"timerSound"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1623483894484", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1623483894484", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1623483894484", id:"an.TextInput"},
+		{src:"components/ui/src/image.js?1623483894484", id:"an.Image"},
+		{src:"components/ui/src/css.js?1623483894484", id:"an.CSS"},
+		{src:"components/ui/src/button.js?1623483894484", id:"an.Button"}
 	],
 	preloads: []
 };

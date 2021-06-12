@@ -58,7 +58,7 @@ const soal = [
         kunciJawaban: 'C'
     },
     {
-        gambar      : 'https://muhammadfattah.github.io/projek-lab-pbk/assets/images/motherboard.jpg',
+        gambar      : 'https://muhammadfattah.github.io/projek-lab-pbk/assets/images/mainboard.jpg',
         soal        : 'Hardware yang ditunjukan pada gambar, disebut...',
         pilihA      : "VGA Card",
         pilihB      : "Power supply",
