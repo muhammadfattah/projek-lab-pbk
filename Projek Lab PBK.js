@@ -21,21 +21,21 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_114 = function() {
+(lib.CachedBmp_118 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_3"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_113 = function() {
+(lib.CachedBmp_117 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_112 = function() {
+(lib.CachedBmp_116 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
@@ -125,7 +125,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,2153,249);
 
 
 
-(lib.CachedBmp_111 = function() {
+(lib.CachedBmp_115 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
@@ -190,13 +190,13 @@ p._updateVisibility = _updateVisibility;
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_112();
+	this.instance = new lib.CachedBmp_116();
 	this.instance.setTransform(-166.45,-57.45,0.2804,0.2804);
 
-	this.instance_1 = new lib.CachedBmp_113();
+	this.instance_1 = new lib.CachedBmp_117();
 	this.instance_1.setTransform(-166.45,-57.45,0.2804,0.2804);
 
-	this.instance_2 = new lib.CachedBmp_114();
+	this.instance_2 = new lib.CachedBmp_118();
 	this.instance_2.setTransform(-166.45,-57.45,0.2804,0.2804);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).wait(1));
@@ -721,7 +721,7 @@ p._updateVisibility = _updateVisibility;
 	this.hasilNamaUser.parent = this;
 	this.hasilNamaUser.setTransform(960,217.65);
 
-	this.instance_14 = new lib.CachedBmp_111();
+	this.instance_14 = new lib.CachedBmp_115();
 	this.instance_14.setTransform(459.45,197.6,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_14},{t:this.hasilNamaUser},{t:this.instance_13},{t:this.buttonUlang},{t:this.instance_12},{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.hasilBenar},{t:this.pesan}]},51).to({state:[]},1).wait(1));
@@ -823,18 +823,18 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CachedBmp_68.png?1623466368704", id:"CachedBmp_68"},
-		{src:"images/Projek Lab PBK_atlas_.png?1623466368601", id:"Projek Lab PBK_atlas_"},
-		{src:"images/Projek Lab PBK_atlas_2.png?1623466368601", id:"Projek Lab PBK_atlas_2"},
-		{src:"images/Projek Lab PBK_atlas_3.png?1623466368602", id:"Projek Lab PBK_atlas_3"},
-		{src:"images/Projek Lab PBK_atlas_4.png?1623466368603", id:"Projek Lab PBK_atlas_4"},
-		{src:"sounds/buttonClickSound.mp3?1623466368704", id:"buttonClickSound"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1623466368704", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1623466368704", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1623466368704", id:"an.TextInput"},
-		{src:"components/ui/src/image.js?1623466368704", id:"an.Image"},
-		{src:"components/ui/src/css.js?1623466368704", id:"an.CSS"},
-		{src:"components/ui/src/button.js?1623466368704", id:"an.Button"}
+		{src:"images/CachedBmp_68.png?1623466490823", id:"CachedBmp_68"},
+		{src:"images/Projek Lab PBK_atlas_.png?1623466490719", id:"Projek Lab PBK_atlas_"},
+		{src:"images/Projek Lab PBK_atlas_2.png?1623466490720", id:"Projek Lab PBK_atlas_2"},
+		{src:"images/Projek Lab PBK_atlas_3.png?1623466490721", id:"Projek Lab PBK_atlas_3"},
+		{src:"images/Projek Lab PBK_atlas_4.png?1623466490722", id:"Projek Lab PBK_atlas_4"},
+		{src:"sounds/buttonClickSound.mp3?1623466490823", id:"buttonClickSound"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1623466490823", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1623466490823", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1623466490823", id:"an.TextInput"},
+		{src:"components/ui/src/image.js?1623466490823", id:"an.Image"},
+		{src:"components/ui/src/css.js?1623466490823", id:"an.CSS"},
+		{src:"components/ui/src/button.js?1623466490823", id:"an.Button"}
 	],
 	preloads: []
 };

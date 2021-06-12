@@ -44,7 +44,7 @@
 .button.benar{
     color: white !important;
     border-color: lime !important;
-    background-color: white;
+    background-color: white !important;
 }
 
 .img{
