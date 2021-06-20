@@ -52,7 +52,7 @@
     /* border: 3px solid #0066FF; */
     border: 3px solid red;
 }
-.button .center{
+.center{
     cursor: pointer;
     text-align: center !important;
     font-family: 'Cooper Black';

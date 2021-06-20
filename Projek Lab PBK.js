@@ -14,21 +14,21 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_104 = function() {
+(lib.CachedBmp_120 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_3"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_103 = function() {
+(lib.CachedBmp_119 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_3"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_102 = function() {
+(lib.CachedBmp_118 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
@@ -118,7 +118,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,2153,249);
 
 
 
-(lib.CachedBmp_101 = function() {
+(lib.CachedBmp_117 = function() {
 	this.initialize(ss["Projek Lab PBK_atlas_4"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
@@ -169,13 +169,13 @@ p._updateVisibility = _updateVisibility;
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_102();
+	this.instance = new lib.CachedBmp_118();
 	this.instance.setTransform(-166.45,-57.45,0.2804,0.2804);
 
-	this.instance_1 = new lib.CachedBmp_103();
+	this.instance_1 = new lib.CachedBmp_119();
 	this.instance_1.setTransform(-166.45,-57.45,0.2804,0.2804);
 
-	this.instance_2 = new lib.CachedBmp_104();
+	this.instance_2 = new lib.CachedBmp_120();
 	this.instance_2.setTransform(-166.45,-57.45,0.2804,0.2804);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).wait(1));
@@ -278,7 +278,13 @@ p._updateVisibility = _updateVisibility;
 	}
 	this.frame_49 = function() {
 		this.stop();
-		this.gotoAndStop('frameteori');
+		
+		if(teori[indexTeori]){
+			this.gotoAndStop('frameteori');
+		}else{
+			indexTeori = 0;
+			this.gotoAndStop('selamatDatangFrame');
+		}
 	}
 	this.frame_50 = function() {
 		this.stop();
@@ -295,9 +301,7 @@ p._updateVisibility = _updateVisibility;
 		});
 		
 		nextButton.addEventListener('click',next = ()=>{
-			if(indexTeori<teori.length-1){
-				indexTeori+=1;
-			}
+			indexTeori+=1;
 			hapusEventTombolTeori();
 			this.gotoAndStop('frameRefreshTeori');
 		});
@@ -323,6 +327,7 @@ p._updateVisibility = _updateVisibility;
 					namaUser = inputNama.value;
 					this.buttonMulai.removeEventListener('click',eventButtonMulai);
 					this.inputNama.removeEventListener('click',eventEnterMulai);
+					tombolKembaliTeori.removeEventListener('click',eventTombolKembaliTeori);
 					this.removeAllChildren();
 					this.gotoAndStop('refreshFrame');
 				}
@@ -338,12 +343,23 @@ p._updateVisibility = _updateVisibility;
 							namaUser = inputNama.value;
 							this.buttonMulai.removeEventListener('click',eventButtonMulai);
 							this.inputNama.removeEventListener('click',eventEnterMulai);
+							tombolKembaliTeori.removeEventListener('click',eventTombolKembaliTeori);
 							this.removeAllChildren();
 							this.gotoAndStop('refreshFrame');
 						}
 					}else{
 						alert('Nama belum diisi!');
 					}
+			}
+		});
+		
+		tombolKembaliTeori.addEventListener('click',eventTombolKembaliTeori = ()=>{
+			if(confirm('Kembali ke teori?')){
+				this.buttonMulai.removeEventListener('click',eventButtonMulai);
+				this.inputNama.removeEventListener('click',eventEnterMulai);
+				tombolKembaliTeori.removeEventListener('click',eventTombolKembaliTeori);
+				this.removeAllChildren();
+				this.gotoAndStop('frameteori');
 			}
 		});
 	}
@@ -645,11 +661,11 @@ p._updateVisibility = _updateVisibility;
 	this.judulTeori.parent = this;
 	this.judulTeori.setTransform(960,61.35);
 
-	this.nextButton = new lib.an_Button({'id': 'nextButton', 'label':'Next', 'disabled':false, 'visible':true, 'class':'button'});
+	this.nextButton = new lib.an_Button({'id': 'nextButton', 'label':'Next', 'disabled':false, 'visible':true, 'class':'button center'});
 
 	this.nextButton.setTransform(1536.9,954.2,4.8854,4.8854,0,0,0,50,11.1);
 
-	this.prevButton = new lib.an_Button({'id': 'prevButton', 'label':'Prev', 'disabled':false, 'visible':true, 'class':'button'});
+	this.prevButton = new lib.an_Button({'id': 'prevButton', 'label':'Prev', 'disabled':false, 'visible':true, 'class':'button center'});
 
 	this.prevButton.setTransform(376.05,954.2,4.8854,4.8854,0,0,0,50,11.1);
 
@@ -836,12 +852,16 @@ p._updateVisibility = _updateVisibility;
 	this.hasilNamaUser.parent = this;
 	this.hasilNamaUser.setTransform(960,217.65);
 
-	this.instance_14 = new lib.CachedBmp_101();
+	this.instance_14 = new lib.CachedBmp_117();
 	this.instance_14.setTransform(459.45,197.6,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_14},{t:this.hasilNamaUser},{t:this.instance_13},{t:this.buttonUlang},{t:this.instance_12},{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.hasilBenar},{t:this.pesan}]},54).to({state:[]},1).wait(1));
 
 	// SelamatDatang
+	this.tombolKembaliTeori = new lib.an_Button({'id': 'tombolKembaliTeori', 'label':'Lihat Teori', 'disabled':false, 'visible':true, 'class':'button center'});
+
+	this.tombolKembaliTeori.setTransform(389,937.15,5.0096,5.0096,0,0,0,50.1,11.1);
+
 	this.myStyle_3 = new lib.an_CSS({'id': 'myStyle_3', 'href':'https://muhammadfattah.github.io/projek-lab-pbk/assets/style.css'});
 
 	this.myStyle_3.setTransform(2457.3,264.85,8.7037,8.7037,0,0,0,50.1,11.1);
@@ -878,7 +898,7 @@ p._updateVisibility = _updateVisibility;
 	this.instance_22 = new lib.LingkaranBiruSplashScreen();
 	this.instance_22.setTransform(80.9,62.3,2.0467,2.0467,0,0,0,0.2,0);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_22},{t:this.instance_21},{t:this.instance_20},{t:this.inputNama},{t:this.buttonMulai},{t:this.instance_19},{t:this.instance_18},{t:this.instance_17},{t:this.instance_16},{t:this.instance_15},{t:this.myStyle_3}]},51).to({state:[]},1).wait(4));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_22},{t:this.instance_21},{t:this.instance_20},{t:this.inputNama},{t:this.buttonMulai},{t:this.instance_19},{t:this.instance_18},{t:this.instance_17},{t:this.instance_16},{t:this.instance_15},{t:this.myStyle_3},{t:this.tombolKembaliTeori}]},51).to({state:[]},1).wait(4));
 
 	// TextYukQuiz
 	this.text = new cjs.Text("Komponen dalam PC", "96px 'Cooper Black'", "#0066FF");
@@ -941,22 +961,22 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CachedBmp_27.png?1624197652137", id:"CachedBmp_27"},
-		{src:"images/Projek Lab PBK_atlas_.png?1624197652033", id:"Projek Lab PBK_atlas_"},
-		{src:"images/Projek Lab PBK_atlas_2.png?1624197652034", id:"Projek Lab PBK_atlas_2"},
-		{src:"images/Projek Lab PBK_atlas_3.png?1624197652035", id:"Projek Lab PBK_atlas_3"},
-		{src:"images/Projek Lab PBK_atlas_4.png?1624197652035", id:"Projek Lab PBK_atlas_4"},
-		{src:"sounds/buttonClickSound.mp3?1624197652137", id:"buttonClickSound"},
-		{src:"sounds/correctSound.mp3?1624197652137", id:"correctSound"},
-		{src:"sounds/errorSound.mp3?1624197652137", id:"errorSound"},
-		{src:"sounds/soundTrack.mp3?1624197652137", id:"soundTrack"},
-		{src:"sounds/timerSound.mp3?1624197652137", id:"timerSound"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1624197652137", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1624197652137", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js?1624197652137", id:"an.TextInput"},
-		{src:"components/ui/src/image.js?1624197652137", id:"an.Image"},
-		{src:"components/ui/src/css.js?1624197652137", id:"an.CSS"},
-		{src:"components/ui/src/button.js?1624197652137", id:"an.Button"}
+		{src:"images/CachedBmp_27.png?1624198566885", id:"CachedBmp_27"},
+		{src:"images/Projek Lab PBK_atlas_.png?1624198566773", id:"Projek Lab PBK_atlas_"},
+		{src:"images/Projek Lab PBK_atlas_2.png?1624198566774", id:"Projek Lab PBK_atlas_2"},
+		{src:"images/Projek Lab PBK_atlas_3.png?1624198566774", id:"Projek Lab PBK_atlas_3"},
+		{src:"images/Projek Lab PBK_atlas_4.png?1624198566775", id:"Projek Lab PBK_atlas_4"},
+		{src:"sounds/buttonClickSound.mp3?1624198566885", id:"buttonClickSound"},
+		{src:"sounds/correctSound.mp3?1624198566885", id:"correctSound"},
+		{src:"sounds/errorSound.mp3?1624198566885", id:"errorSound"},
+		{src:"sounds/soundTrack.mp3?1624198566885", id:"soundTrack"},
+		{src:"sounds/timerSound.mp3?1624198566885", id:"timerSound"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1624198566885", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1624198566885", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/textinput.js?1624198566885", id:"an.TextInput"},
+		{src:"components/ui/src/image.js?1624198566885", id:"an.Image"},
+		{src:"components/ui/src/css.js?1624198566885", id:"an.CSS"},
+		{src:"components/ui/src/button.js?1624198566885", id:"an.Button"}
 	],
 	preloads: []
 };
